@@ -1,0 +1,38 @@
+#Text Color
+color1 00ff00
+#Icons Color
+color2 ff0000
+#Variable Color
+color3 800000
+
+update_interval 1
+double_buffer yes
+no_buffers yes
+imlib_cache_size 10
+own_window true
+own_window_type normal
+own_window_hints undecorated,sticky,skip_taskbar,skip_pager,below
+own_window_colour 000000
+own_window_argb_visual yes
+own_window_argb_value 0
+own_window_transparent yes
+minimum_size 270 190
+background yes
+border_inner_margin 0
+border_outer_margin 0
+alignment top_left
+gap_x 48
+gap_y 210
+use_xft yes
+xftfont Roboto Condensed:size=12
+text_buffer_size 256
+draw_shades yes
+override_utf8_locale yes
+draw_graph_borders no
+default_color FFFFFF
+
+TEXT
+${goto 30}${color1}${hr 1}
+${color2}${font LineAwesomeMod :size=14}8 ${font}${color1}Download: ${color}${font} ${goto 110}${color4}${downspeedgraph eno1 12,80 cc9900 cc0000 }${color3} ${goto 210}${font} ${downspeed eno1}${font}
+${color2}${font LineAwesomeMod :size=14}T ${font}${color1}Upload: ${color}${font} ${goto 110}${color4}${upspeedgraph eno1 12,80 cc9900 cc0000 }${color3} ${goto 210}${font} ${upspeed eno1}${font}
+${color2}${font LineAwesomeMod :size=14}o ${font :size=10}${font}${color1}Total Download: ${goto 210}${color3}${font} ${totaldown eno1}

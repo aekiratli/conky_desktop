@@ -1,0 +1,45 @@
+#Text Color
+color1 00ff00
+#Icons Color
+color2 ff0000
+#Graph Color
+color3 800000
+
+update_interval 1
+double_buffer yes
+no_buffers yes
+imlib_cache_size 10
+own_window true
+own_window_type normal
+own_window_hints undecorated,sticky,skip_taskbar,skip_pager,below
+own_window_colour 000000
+own_window_argb_visual yes
+own_window_argb_value 0
+own_window_transparent yes
+minimum_size 190 190
+background yes
+border_inner_margin 0
+border_outer_margin 0
+alignment middle_right
+gap_x 325
+gap_y 200
+use_xft yes
+xftfont Roboto Condensed:size=12
+text_buffer_size 256
+draw_shades yes
+override_utf8_locale yes
+draw_graph_borders no
+default_color FFFFFF
+
+
+TEXT
+${color2}${font LineAwesomeMod :size=14}R $font${color1}Memory ${color1}${alignr}${mem}
+${membar 7,}
+$color1${top_mem name 1} $alignr $color3${top_mem mem_res 1}
+$color1${top_mem name 2} $alignr $color3${top_mem mem_res 2}
+$color1${top_mem name 3} $alignr $color3${top_mem mem_res 3}
+$color1${top_mem name 4} $alignr $color3${top_mem mem_res 4}
+$color1${top_mem name 5} $alignr $color3${top_mem mem_res 5}
+$color1${top_mem name 6} $alignr $color3${top_mem mem_res 6}
+$color1${top_mem name 7} $alignr $color3${top_mem mem_res 7}
+
